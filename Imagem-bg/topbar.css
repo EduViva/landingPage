@@ -9,7 +9,7 @@
         margin-left: 2px;
     }
     .social{
-        margin-left: 25%;
+        margin-left: 18%;
     }
     .links{
         display: flex;
@@ -67,6 +67,7 @@ nav{
     background-image: linear-gradient(to bottom, purple, rgba(250,250,250,0));
     position: fixed !important;
     width: 100%;
+    z-index: 99;
 }
 
 .nav-item{

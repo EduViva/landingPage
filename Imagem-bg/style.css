@@ -1,0 +1,45 @@
+.initial{
+    background: url(../sources/bg-book.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: black;
+    overflow: none;
+    padding: 1.4em;
+    position: absolute;
+    text-align: center;
+    background-size: cover;
+    z-index: 98;
+}
+
+small{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-board-text{
+    font-size: 14pt;
+}
+
+@media(min-width: 769px){
+    .bg-board{
+        background-color: rgba(0,0,0,.5);
+        width: 35%;
+        height: 60%;
+        padding: 50px 40px;
+        margin: 8% 5%;
+    }   
+}
+
+@media(max-width: 768px){
+    .bg-board{
+        margin-top: 62%;
+    }
+    .bg-board h2{
+        display: none;
+    }
+}
