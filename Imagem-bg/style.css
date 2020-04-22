@@ -1,7 +1,36 @@
+@media(min-width: 769px){
+    .bg-board{
+        background-color: rgba(0,0,0,.5);
+        width: 35%;
+        height: 60%;
+        padding: 50px 40px;
+        margin: 8% 5%;
+    }
+    .board-know{
+        height: 40vh;
+        width: 50vw;
+        margin: 0px 60px;
+    }
+}
+
+@media(max-width: 768px){
+    .bg-board{
+        margin-top: 62%;
+    }
+    .bg-board h2{
+        display: none;
+    }
+}
+
+body{
+    background: whitesmoke !important;
+}
+
 .initial{
     background: url(../sources/bg-book.jpg);
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: cover;
+    background-position: center;
     bottom: 0;
     left: 0;
     right: 0;
@@ -9,9 +38,9 @@
     color: black;
     overflow: none;
     padding: 1.4em;
-    position: absolute;
     text-align: center;
-    background-size: cover;
+    width: 100%;
+    height: 100vh;
     z-index: 98;
 }
 
@@ -22,24 +51,40 @@ small{
 }
 
 .bg-board-text{
-    font-size: 14pt;
+    font-size: 15pt;
 }
 
-@media(min-width: 769px){
-    .bg-board{
-        background-color: rgba(0,0,0,.5);
-        width: 35%;
-        height: 60%;
-        padding: 50px 40px;
-        margin: 8% 5%;
-    }   
+.chevron{
+    animation: arrow-section 1s linear alternate infinite;
+    cursor: pointer;
 }
 
-@media(max-width: 768px){
-    .bg-board{
-        margin-top: 62%;
+section{
+    height: 100vh;
+    margin-top: 15%;
+}
+
+.section-know{
+    display: flex;
+}
+
+.board-know{
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: -2px 1.5px 20px black;
+}
+
+.big-ball{
+}
+
+@keyframes arrow-section{
+    from{
+        transform: translateY(-10px);
     }
-    .bg-board h2{
-        display: none;
+    to{
+        transform: translateY(5px);
     }
 }

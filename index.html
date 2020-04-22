@@ -3,80 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page da Sua Empresa</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Utilitários</title>
 
-    <link rel="shortcut icon" href="sources/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="topbar.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://kit.fontawesome.com/c08316ed12.js" crossorigin="anonymous" SameSite="None"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="topbar-funcs.js"></script>
-    <script src="funcs.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(197,207,217);
+            text-align: center;
+        }
+        fieldset{
+            margin-top: 50px;
+            width: 500px;
+            height: 400px;
+            
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 9px;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+        #parent{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 8%;
+            margin-left: 20%;
+            margin-bottom: 10%;
+            width: 60%;
+            border-radius: 9px;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+        button{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 13pt;
+            flex-basis: 150px;
+            flex-grow: 5;
+            margin: 8px;
+            height: 150px;
+            width: 150px;
+            /*padding: 30px;*/
+            cursor: pointer;
+            background-color: rgb(217,227,237);
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+        button:hover{
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px
+            6px -1px rgba(225, 225, 225, 0.7), -0.5px -0.5px 0 rgba(225, 225, 225, 1),
+            0.5px 0.5px 0 rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.01);
+            outline: none;
+        }
+        h1{
+            margin-top: 5%;
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 <body>
     
-    <header class="menu-open">
+    <h1>Exemplos de Landing Page</h1>
+   
+    <div id="parent">
+        <button onclick="window.location.href='Imagem-bg/index.html'">Imagem<br>Background</button>
+        <button disabled>Em<br>Breve</button>
+        <button disabled>Em<br>Breve</button>
+    </div>
 
-        <main class="main-menu">
-            <div class="logo">
-                <img class="logo-img" src="/sources/logo.png" alt="logo bower">
-            </div>
-
-            <h1>Bower Live</h1>
-            
-            <nav class="nav-items" id="nav-items" role="navigation">
-                <p aria-hidden="true" id="close">X</p>
-                <ul class="items-ul">
-                    <li><button>Home</button></li>
-                    <li><button>App</button></li>
-                    <li><button>About</button></li>
-                    <!--<li><a href="">Home</a></li>
-                    <li><a href="">App</a></li>
-                    <li><a href="">About</a></li>-->
-                </ul>
-            </nav>
-            <img id="menu-icon" src="/sources/menu-icon.png" alt="">
-            <div class="redes-sociais">
-                <ul class="social-ul">
-                    <li id="face"><a href=""><img src="/sources/face-icon.png" alt="Facebook icon"></a></li>
-                    <li id="insta"><a href=""><img src="sources/insta icon.png" alt="Instagram-icon"></a></li>
-                </ul>
-            </div>
-        </main>
-    
-    </header>
-
-    <main>
-
-        <section class="main-section">
-
-            <h1 class="title-main" id="sonhe">Sonhe Alto</h1>
-            <div id="img-section">
-                <img src="sources/celular.png" alt="">
-                <i class="fas fa-chevron-down fa-2x" id="section-down"></i>
-            </div>
-            <h1 class="title-main" id="inspire">Inspire o Mundo</h1>
-            
-
-        </section>
-        
-        <div class="middle-div">
-
-        </div>
-
-        <section class="section-two">
-<!--
-            <svg class="bi bi-search" width="50rem" height="50rem" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
-                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
-            </svg>
--->
-        </section>
-
-    </main>
 
 </body>
 </html>
