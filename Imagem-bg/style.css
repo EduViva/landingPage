@@ -24,6 +24,7 @@
 
 body{
     background: whitesmoke !important;
+    overflow-x: hidden;
 }
 
 .initial{
@@ -61,11 +62,12 @@ small{
 
 section{
     height: 100vh;
-    margin-top: 15%;
+    /*margin-top: 15%;*/
 }
 
 .section-know{
-    display: flex;
+    margin-top: -41.3%;
+    padding-top: 30vh;
 }
 
 .board-know{
@@ -78,6 +80,73 @@ section{
 }
 
 .big-ball{
+    margin-right: -500px;
+    position: sticky;
+    top: 0;
+    left: 75%;
+    z-index: 50;
+}
+
+.tiny-ball{
+    z-index: -50;
+}
+
+.t-ball1{
+    margin-top: 30%;
+    margin-left: 45px;
+    position: fixed;
+    top: 0;
+}
+
+.t-ball2{
+    margin-top: 50%;
+    margin-left: 50%;
+    position: fixed;
+}
+
+.t-ball3{
+    margin-top: 70%;
+    margin-left: 25%;
+    position: fixed;
+}
+
+.t-ball4{
+    margin-top: 90%;
+    margin-left: 45px;
+    position: fixed;
+}
+
+.feats{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 98;
+}
+
+.features{
+    z-index: 98;
+    margin-top: 5%;
+    background-color: white;
+    padding: 35px 70px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.big-feature{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.big-feature p{
+    text-align: justify;
+    margin: 30px auto;
+    width: 80%;
+    font-size: 14pt;
+}
+
+.big-feature img{
+    margin-left: 50px;
 }
 
 @keyframes arrow-section{
