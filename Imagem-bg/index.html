@@ -30,7 +30,7 @@
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#">Features</a>
                 <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link" href="#">Media</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
             </div>
             <div class="social nav-items navbar-collapse">
                 <a class="nav-item nav-link social-item" id="facebook" href="#"><img src="../sources/face-icon.png" width="25" height="25"  alt="Facebook"></a>
@@ -57,43 +57,47 @@
             </svg>
         </div>    
     </div>
-    <div>
+    <!--Div para scroll das bolas-->
+    <div> 
 
-        <img class="big-ball" src="../sources/circle.svg">
+        
         <img class="tiny-ball t-ball1" width="60" src="../sources/circle.svg">
         <img class="tiny-ball t-ball2" width="90" src="../sources/circle.svg">
-        <img class="tiny-ball t-ball3" width="70" src="../sources/circle.svg">
+        <img class="tiny-ball t-ball3" width="110" src="../sources/circle.svg">
         <img class="tiny-ball t-ball4" width="70" src="../sources/circle.svg">
-
-        <section class="section section-know">
-            <div class="board board-know">
-                <h2>Não deixe a falta de informação atrapalhar sua empresa!</h2>
-                <br><br>
-                <p class="bg-board-text">67% das pessoas que desistem do seu site, saem na página inicial. </p>
-            </div>
-        </section>
-
-        <section class="section section-features" >
-            <div class="feats">
-                <div class="features f1">
-                    <img src="../sources/logo.png" width="50" alt="">
-                    <h3>Feature 1</h3>
-                    <p>Feature=feature</p>
+        
+        <!--Div para scroll da bola grande-->
+        <div>
+            <img class="big-ball" src="../sources/circle.svg">
+            <section class="section section-know">
+                <div class="board board-know">
+                    <h2>Não deixe a falta de informação atrapalhar sua empresa!</h2>
+                    <br><br>
+                    <p class="bg-board-text">67% das pessoas que desistem do seu site, saem na página inicial. </p>
                 </div>
-                
-                <div class="features f2">
-                    <img src="../sources/logo.png" width="50" alt="">
-                    <h3>Feature 2</h3>
-                    <p>Feature=feature</p>
-                </div>
-                
-                <div class="features f3">
-                    <img src="../sources/logo.png" width="50" alt="">
-                    <h3>Feature 3</h3>
-                    <p>Feature=feature</p>
-                </div>
-            </div>
+            </section>
 
+            <section class="section section-features" >
+                <div class="feats">
+                    <div class="features f1">
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <h3>Feature 1</h3>
+                        <p>Feature=feature</p>
+                    </div>
+                    
+                    <div class="features f2">
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <h3>Feature 2</h3>
+                        <p>Feature=feature</p>
+                    </div>
+                    
+                    <div class="features f3">
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <h3>Feature 3</h3>
+                        <p>Feature=feature</p>
+                    </div>
+                </div>
+        </div>
             <div class="big-feature">
                 <img src="../sources/web-search-feature.svg" width="600" alt="">
                 <div style="z-index: 90;">
@@ -102,13 +106,76 @@
                 </div>
             </div>
         </section>
-    </div>
-
-    <section>
+        <img class="tiny-ball t-ball5" width="80" src="../sources/circle.svg">
         
-    </section>
+        <section class="section section-pricing">
+            <div class="custom-control custom-switch" style="text-align: center;">
+                <label id="mensal-plan" for="customSwitch1" style="margin-right: 40px;">Mensal</label>
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label id="anual-plan" class="custom-control-label" for="customSwitch1" style="color: gray;">Anual</label>
+            </div>
+            <div class="pricing-plans">
+                <div class="prices price-free">
+                    <div class="plans">
+                        <h3>Free</h3>
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <p><span>R$0,00</span></p>
+                    </div>
+                    <div class="price-features free-features">
+                        <p class="price-tem">feat 1</p>
+                        <p class="price-tem">feat 2</p>
+                        <p class="price-ntem">feat 3</p>
+                    </div>
+                </div>
 
-    
+                <div class="prices price-basic">
+                    <div class="plans">
+                        <h3>Basic</h3>
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <p><span id="value-basic">R$10,00</span> <span class="plan-style">/mês</span></p>
+                        <p class="economia-plan">Economia de 10%</p>
+                    </div>
+                    <div class="price-features basic-features">
+                        <p class="price-tem">feat 1</p>
+                        <p class="price-tem">feat 2</p>
+                        <p class="price-ntem">feat 3</p>
+                    </div>
+                </div>
+
+                <div class="prices price-pro">
+                    <div class="plans">
+                        <h3>Pro</h3>
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <p><span id="value-pro">R$30,00</span> <span class="plan-style">/mês</span></p>
+                        <p class="economia-plan">Economia de 15%</p>
+                    </div>
+                    <div class="price-features pro-features">
+                        <p class="price-tem">feat 1</p>
+                        <p class="price-tem">feat 2</p>
+                        <p class="price-ntem">feat 3</p>
+                    </div>
+                </div>
+
+                <div class="prices price-expert">
+                    <div class="plans">
+                        <h3>Expert</h3>
+                        <img src="../sources/logo.png" width="50" alt="">
+                        <p><span id="value-expert">R$50,00</span> <span class="plan-style">/mês</span></p>
+                        <p class="economia-plan">Economia de 20%</p>
+                    </div>
+                    <div class="price-features expert-features">
+                        <p class="price-tem">feat 1</p>
+                        <p class="price-tem">feat 2</p>
+                        <p class="price-ntem">feat 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-contact">
+            Section contact
+        </section>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
