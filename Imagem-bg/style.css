@@ -234,6 +234,39 @@ section{
     margin-top: -1em;
 }
 
+/*Section contact*/
+.section-contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-board{
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+}
+
+.empresa{
+    flex: 2;
+    padding-top: 40px;
+    font-size: 14.5pt;
+    font-weight: 400;
+}
+
+.separador{
+    height: 45vh;
+    border-left: 2px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 1;
+}
+
+.contato{
+    flex: 1;
+}
+
 @keyframes arrow-section{
     from{
         transform: translateY(-10px);
