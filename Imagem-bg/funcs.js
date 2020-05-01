@@ -13,6 +13,9 @@ $(function(){
     var scrolled = $(window).scrollTop();
     $('.tiny-ball').css('top',-(scrolled*0.36)+'px');
     $('.t-ball3').css('top',-(scrolled*0.4)+'px');
+    $('.big-ball').css({
+      'transform':`scale(${1-(scrolled/1000) * 0.25})`
+    });
   }
   $(".custom-switch").on('click', () => {
 

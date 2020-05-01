@@ -68,7 +68,7 @@
         <img class="tiny-ball t-ball4" width="70" src="../sources/circle.svg">
         
         <!--Div para scroll da bola grande-->
-        <div>
+    
             <img class="big-ball" src="../sources/circle.svg">
 
             <section class="section section-know">
@@ -99,7 +99,7 @@
                         <p>Feature=feature</p>
                     </div>
                 </div>
-        </div><!--Até onde a bola grande vai-->
+        <!--Até onde a bola grande vai-->
             
             <div class="big-feature">
                 <img src="../sources/web-search-feature.svg" width="600" alt="">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="prices price-expert">
+                <div class="prices price-expert" style="z-index: 60;">
                     <div class="plans">
                         <h3>Expert</h3>
                         <img src="../sources/logo.png" width="50" alt="">
@@ -231,12 +231,43 @@
                 </div>
                 
                 <div class="separador"></div>
-                <div class="contato"></div>
+                <div class="contato">
+
+                    <h3 style="text-align: center;">Deixe sua mensagem</h3>
+
+                    <form action="">
+
+                        <input type="text" placeholder="Nome" class="input input-nome" required>
+                        <input type="email" placeholder="E-mail" class="input input-mail" required>    
+                        <textarea name="mensagem" rows="5" class="input input-msg"></textarea>
+
+                        <button type="submit">Enviar</button>
+
+                    </form>
+
+                </div>
 
             </div>
-
         </section>
-    
+
+        <div class="newsletter">
+            <form action="">
+                <label for="news">Assine nossa newsletter</label>
+                <input type="email" name="news" placeholder="E-mail" class="input input-news">
+                <button type="submit"><img src="../sources/send.svg" height="30" alt="Assinar"></button>
+            </form>
+        </div>
+
+        <footer>
+            <p style="margin-bottom: 0; color: white;">2020 © <a href="wa.me/51999918720">Eduardo Viva</a></p>
+
+            <div class="social-footer">
+                <img src="../sources/face-footer.svg" height="55" alt="Facebook rede social">
+                <img src="../sources/insta-footer.svg" height="55" alt="Instagram rede social">
+                <img src="../sources/youtube-footer.svg" height="55" alt="Youtube rede social">
+            </div>
+        </footer>
+
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
