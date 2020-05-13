@@ -1,10 +1,10 @@
 @media(min-width: 769px){
     .bg-board{
-        background-color: rgba(0,0,0,.5);
-        width: 35%;
+        background-color: rgba(255,255,255,.5);
+        width: 45%;
         height: 60%;
         padding: 50px 40px;
-        margin: 8% 5%;
+        margin: 12% 0 0 8%;
     }
     .board-know{
         height: 40vh;
@@ -28,7 +28,7 @@ body{
 }
 
 .initial{
-    background: url(../sources/bg-book.jpg);
+    background: url(../sources/purple\ keyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,6 +58,7 @@ small{
 .chevron{
     animation: arrow-section 1s linear alternate infinite;
     cursor: pointer;
+    margin-left: 2%;
 }
 
 section{
@@ -170,10 +171,6 @@ section{
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.features img{
-    
-}
-
 .big-feature{
     display: flex;
     justify-content: space-evenly;
@@ -190,6 +187,7 @@ section{
 .big-feature img{
     margin-left: 50px;
 }
+
 /* Section pricing */
 .section-pricing{
     margin-top: 5%;
@@ -229,7 +227,7 @@ section{
 }
 
 .price-features{
-    background-color: #dcdcdc;
+    background: whitesmoke;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     padding: 10px;
@@ -265,6 +263,30 @@ section{
     top: 1em;
     left: 0.5em;
     margin-top: -1em;
+}
+
+/*Section depoimentos*/
+.section-depoimentos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 140px;
+    height: 75vh;
+}
+
+.depoimentos{
+    text-align: center;
+    flex: 1;
+}
+
+.depoimentos img{
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.depoimento-text{
+    width: 80%;
+    margin: 30px auto;
+    font-style: italic;
 }
 
 /*Section contact*/
@@ -345,6 +367,7 @@ section{
     border-radius: 3px;
 }
 
+/*Newsletter*/
 .newsletter{
     width: 100vw;
     text-align: center;
@@ -367,12 +390,13 @@ section{
 
 .newsletter button{
     margin-left: 10px;
-    background: white;
+    background: transparent;
     border: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
 }
 
+/*Footer*/
 footer{
     background: black;
     height: 55px;
