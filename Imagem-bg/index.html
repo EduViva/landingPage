@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="../sources/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="topbar.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="topbar.js"></script>
     <script src="funcs.js"></script>
 </head>
@@ -274,13 +274,14 @@
 
                     <h3 style="text-align: center;">Deixe sua mensagem</h3>
 
-                    <form action="">
+                    <form class="contact-form" onsubmit="contactSubmited(event)">
 
-                        <input type="text" placeholder="Nome" class="input input-nome" required>
-                        <input type="email" placeholder="E-mail" class="input input-mail" required>    
+                        <input type="text" name="nome" placeholder="Nome" class="input input-nome" required>
+                        <input type="email" name="email" placeholder="E-mail" class="input input-mail" required>    
                         <textarea name="mensagem" rows="5" class="input input-msg"></textarea>
 
-                        <button type="submit">Enviar</button>
+                        <button class="submit-form" name="enviar" type="submit">Enviar</button>
+                        <p id="response-form"></p>
 
                     </form>
                     

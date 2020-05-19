@@ -80,6 +80,45 @@ function goTo(event){
   })
 }
 
+//Formulário de contato
+function contactSubmited(e){
+  e.preventDefault();
+  $(".submit-form").html("Enviando...");
+  $(".submit-form").attr("disabled", true);
+
+  let data = {
+    name: $('.input-nome').val(),
+    email: $('.input-mail').val(),
+    message: $('.input-msg').val(),
+    url: window.location.href
+  };
+
+  sendMessage(data);
+}
+
+
+function sendMessage(message){
+  $.ajax({
+    url: `contact.php`,
+    type: "POST",
+    data: {'message': message},
+    cache: false,
+    async: true,
+    success: function(response) {
+      $(".submit-form").html("Enviar");
+      $(".submit-form").attr("disabled", false);
+      
+      if (response) {
+        $("#response-form").html("Mensagem enviada com sucesso!");
+      } else {
+        $("#response-form").html("Erro no envio da mensagem, tente novamente!");
+      }
+    }
+  })
+}
+
+
+
 
 //Estilos da modal
 var modal_estilos = 'display: block;'
